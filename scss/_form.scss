@@ -1,0 +1,37 @@
+// Extra small devices (smart phones, less than 34em)
+@media (max-width: 33.9em) {
+// write CSS properties here
+
+ }
+// Small devices (phones, tablets less than 48em)
+@media (max-width: 47.9em) {
+// write CSS properties here
+  .checkin{
+    width: 100%;
+    @include clearfix;
+  }
+}
+
+// Medium devices (tablets, small laptops less than 62em)
+@media (max-width: 61.9em) {
+// write CSS properties here
+ }
+
+// Large devices (desktops, screens less than 75em)
+@media (max-width: 74.9em) {
+// write CSS properties here
+}
+
+
+.checkin{
+  width: 30%;
+  background: #fff;
+  padding: 2rem;
+  float: right;
+  margin: 3rem;
+  form{
+    label{
+      font-weight: 100;
+    }
+  }
+}

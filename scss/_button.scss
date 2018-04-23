@@ -1,0 +1,21 @@
+.checkin{
+  button{
+  background-color: $primary;
+  border: none;
+  width:100%;
+    &:hover{
+      background-color: $primary-hover;
+    }
+  }
+}
+
+
+a.btn{
+  margin-top: 1rem;
+  background-color: $primary;
+  border: none;
+  width:100%;
+    &:hover{
+      background-color: $primary-hover;
+    }
+}
