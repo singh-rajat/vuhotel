@@ -6317,11 +6317,13 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #dee2e6 !important; } }
 
 body {
-  background-color: #eee; }
+  background-color: #eee;
+  min-height: 100vh; }
 
 #landing {
   background: url("../image/landing.png");
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .search-result {
   margin: 2rem 0;
@@ -6369,10 +6371,21 @@ body {
   .checkin button:hover {
     background-color: #bf9339; }
 
-a.btn {
+.btn-primary, button[type=submit] {
   margin-top: 1rem;
   background-color: #f2b848;
   border: none;
   width: 100%; }
-  a.btn:hover {
-    background-color: #bf9339; }
+  .btn-primary:hover, button[type=submit]:hover {
+    background-color: #bf9339;
+    border: none; }
+
+.card {
+  margin-top: 2rem; }
+
+footer {
+  background-color: #287EF6;
+  color: white; }
+  footer p {
+    text-align: center;
+    padding: 1rem 0; }

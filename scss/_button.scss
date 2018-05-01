@@ -10,12 +10,28 @@
 }
 
 
-a.btn{
+.btn-primary, button[type=submit] {
   margin-top: 1rem;
   background-color: $primary;
   border: none;
   width:100%;
     &:hover{
       background-color: $primary-hover;
+      border: none;
     }
 }
+
+// .modal{
+//   a {
+//     .btn{
+//     width: 100%;
+//     background-color: $primary;
+//     border: none;
+//       &:hover{
+//       background-color: $primary-hover;
+//       border: none;
+//       }
+//     }
+//   }
+//
+// }

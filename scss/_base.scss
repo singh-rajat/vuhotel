@@ -1,11 +1,13 @@
 
 body{
   background-color: #eee;
+  min-height: 100vh;
 }
 
 #landing{
   background: url('../image/landing.png');
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .search-result{
