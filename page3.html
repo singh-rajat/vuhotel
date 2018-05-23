@@ -22,13 +22,13 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Gallery</a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#login">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#register">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#">Logout</a>
                 </li>
             </ul>
         </div>
@@ -42,7 +42,7 @@
     <div class="row">
       <div class="col-sm-12">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-6 mb-4">
             <div class="row">
               <div class="col-sm-12">
                 <!--first row left  -->
@@ -101,7 +101,7 @@
 
               <div class="col-sm-12">
                 <small>By clicking on the "Complete Booking" button below, you acknowledge the following: <br> You agree and accept vuhotel.com Terms and Conditions, Terms of use, Privacy and policy.</small>
-                <a href="#" class="btn btn-primary">COMPLETE BOOKING</a>
+                <a href="page4.html" class="btn btn-primary">COMPLETE BOOKING</a>
               </div>
             </div>
           </div>
@@ -143,8 +143,79 @@
 
     </div> <!--End of row -->
 
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="inputEmail4">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="inputPassword4">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary">Sign in</a>
 
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End of modal -->
+
+
+    <!-- register Modal -->
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registerModalLabel">Register</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="inputRegName">Name</label>
+                  <input type="text" class="form-control" id="inputRegName" placeholder="text">
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="inputRegEmail">Email</label>
+                  <input type="email" class="form-control" id="inputRegEmail" placeholder="Email">
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="inputRegPassword">Password</label>
+                  <input type="password" class="form-control" id="inputRegPassword" placeholder="Password">
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary">Register</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End of register modal -->
   </div> <!-- End of container -->
+
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy2018 vuhotel.com</p>
+      </div>
+    </footer>
   </section> <!-- End of wrapper -->
 
 <script type="text/javascript" src="js/jquery.min.js"></script>

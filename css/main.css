@@ -6337,7 +6337,7 @@ body {
     .search-result ul li {
       list-style: none; }
 
-.nav-link {
+.navbar-dark .navbar-nav .nav-link {
   color: white; }
 
 @media (max-width: 47.9em) {
@@ -6385,7 +6385,20 @@ body {
 
 footer {
   background-color: #287EF6;
+  position: absolute;
+  width: 100%;
   color: white; }
   footer p {
     text-align: center;
-    padding: 1rem 0; }
+    padding: 0.5rem 0; }
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  margin-top: -250px;
+  /* Half the height */
+  margin-left: -250px;
+  /* Half the width */ }

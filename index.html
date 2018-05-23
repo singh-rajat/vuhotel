@@ -22,13 +22,13 @@
                 <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#login">Login</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#register">Register</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#">Logout</a>
             </li>
         </ul>
     </div>
@@ -62,6 +62,14 @@
               </select>
             </div>
             <div class="form-group">
+              <label for="roomTypeSelect">ROOM TYPES</label>
+              <select class="form-control" id="roomTypeSelect">
+                <option>Single</option>
+                <option>Double</option>
+                <option>Suite</option>
+              </select>
+            </div>
+            <div class="form-group">
               <label for="adultSelect">ADULT</label>
               <select class="form-control" id="adultSelect">
                 <option>0</option>
@@ -89,6 +97,74 @@
 
           </form>
         </div> <!--End of checkin form-->
+
+        <!-- Login Modal -->
+        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-12">
+                      <label for="inputEmail4">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-12">
+                      <label for="inputPassword4">Password</label>
+                      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-primary">Sign in</a>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End of modal -->
+
+        <!-- register Modal -->
+        <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="registerModalLabel">Register</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-12">
+                      <label for="inputRegName">Name</label>
+                      <input type="text" class="form-control" id="inputRegName" placeholder="Name">
+                    </div>
+                    <div class="form-group col-md-12">
+                      <label for="inputRegEmail">Email</label>
+                      <input type="email" class="form-control" id="inputRegEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-12">
+                      <label for="inputRegPassword">Password</label>
+                      <input type="password" class="form-control" id="inputRegPassword" placeholder="Password">
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-primary">Register</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End of register modal -->
+
+
+
       </div> <!-- End of col-md-12-->
     </div> <!--End of row -->
   </div> <!-- End of container -->
